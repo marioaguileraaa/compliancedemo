@@ -31,7 +31,7 @@ permissions:
   contents: read
 
 env:
-  ACR_NAME: acrcompliancedemoenqgb2
+  ACR_NAME: acrcompliancedemol63buz
   IMAGE_NAME: compliance-demo-api
 
 jobs:
@@ -80,4 +80,4 @@ jobs:
           echo "- **Commit**: \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
           echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Deploy**: Automatic via Event Grid → Automation Runbook" >> $GITHUB_STEP_SUMMARY
-          echo "- **App URL**: https://ca-api-compliancedemo.ashypond-ed21e6b9.eastus2.azurecontainerapps.io" >> $GITHUB_STEP_SUMMARY
+          echo "- **App URL**: https://ca-api-compliancedemo.jollyriver-d650b0ca.eastus2.azurecontainerapps.io" >> $GITHUB_STEP_SUMMARY

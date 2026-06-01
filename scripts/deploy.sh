@@ -11,7 +11,7 @@ set -euo pipefail
 
 RESOURCE_GROUP="rg-compliancedemo"
 CONTAINER_APP="ca-api-compliancedemo"
-ACR_NAME="acrcompliancedemoenqgb2"
+ACR_NAME="acrcompliancedemol63buz"
 IMAGE="compliance-demo-api"
 
 # Compliance tags — required for deployment-compliance-check signal 2

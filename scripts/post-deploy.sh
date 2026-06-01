@@ -440,8 +440,9 @@ fi
 echo -e "\n   Adding compliancedemo repo to agent..."
 TOKEN=$(get_agent_token)
 
-# Detect repo owner from git remote or default
-REPO_OWNER="dm-chelupati"
+# Detect repo owner from git remote, fall back to fork owner
+REPO_OWNER="$(git -C "$DEMO_DIR" remote get-url origin 2>/dev/null | sed -E 's#.*[/:]([^/]+)/[^/]+(\.git)?$#\1#')"
+REPO_OWNER="${REPO_OWNER:-marioaguileraaa}"
 REPO_NAME="compliancedemo"
 REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}"
 
